@@ -19,4 +19,9 @@ public class HiController {
     public String sayHi(@RequestParam String name){
         return schedualServiceHi.sayHiFromClientOne(name);
     }
+
+    @RequestMapping("/info")
+    public String describe() {
+        return "service-feign";
+    }
 }
