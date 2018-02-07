@@ -18,5 +18,8 @@ public class HelloControler {
         return helloService.hiService(name);
     }
 
-
+    @RequestMapping("/info")
+    public String describe() {
+        return "service-ribbon";
+    }
 }

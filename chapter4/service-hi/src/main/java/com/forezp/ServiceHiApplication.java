@@ -24,4 +24,8 @@ public class ServiceHiApplication {
 		return "hi "+name+",i am from port:" +port;
 	}
 
+	@RequestMapping("/info")
+	public String describe() {
+		return "service-hi";
+	}
 }
