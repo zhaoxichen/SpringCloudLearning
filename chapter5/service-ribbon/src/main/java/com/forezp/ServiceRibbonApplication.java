@@ -18,7 +18,7 @@ public class ServiceRibbonApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ServiceRibbonApplication.class, args);
 	}
-
+    // 向程序spring的容器ioc注入一个bean
 	@Bean
 	@LoadBalanced
 	RestTemplate restTemplate() {

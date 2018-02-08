@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
+ * fallback = SchedualServiceHiHystric.class  当调用出错，回调该接口的实现类
  * Created by fangzhipeng on 2017/4/6.
  */
 @FeignClient(value = "service-hi",fallback = SchedualServiceHiHystric.class)

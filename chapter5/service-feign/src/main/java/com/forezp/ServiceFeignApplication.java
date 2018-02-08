@@ -7,7 +7,7 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableFeignClients
+@EnableFeignClients //开启Feign的功能  feign集成了ribbon
 public class ServiceFeignApplication {
 
 	public static void main(String[] args) {
